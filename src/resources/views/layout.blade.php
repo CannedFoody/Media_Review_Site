@@ -12,16 +12,31 @@
 </head>
 
 <body>
-    <nav class="navbar bg-primary mb-3" data-bs-theme="dark">
-        <header class="container">
-            <a class="navbar-brand" href="#">2. Projekts - {{ $title }}</a>
-        </header>
+    <nav class="navbar navbar-expand-md bg-primary mb-3" data-bs-theme="dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">2. Projekts</span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Sākumlapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/authors">Autori</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <main class="container">
         <div class="row">
-            <div class="col"></div>
-
+            <div class="col">
+            
             @yield("content")
 
             </div>
@@ -40,6 +55,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="/js/admin.js"></script>
 </body>
 
 </html>
